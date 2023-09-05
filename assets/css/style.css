@@ -22,14 +22,44 @@
 
 body {
     background: var(--color-text);
+    margin-bottom: 60px;
 }
 
 .textoResponsivo {
-    font-size: clamp(1em, 0.5em + 1vw, 1.3em);
+    font-size: clamp(1.6em, 0.5em + 1vw, 1em);
     text-indent: 30px;
     text-align: justify;
     line-height: 1.7;
     max-width: 80%;
+    font-weight: normal;
+}
+
+.tituloH2, 
+.tituloH3,
+.subTexto {
+    font-size: 2.7rem;
+    color: var(--color-details);
+    margin: 30px 0;
+    font-weight: normal;
+    max-width: 80%;
+    text-align: center;
+}
+
+.tituloH3 {
+    font-size: 2rem;
+}
+
+.subTexto {
+    font-size: clamp(1.2em, 0.5em + 1vw, 1em);
+}
+
+.image img {
+    max-width: 100%;
+    margin-inline: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5%;
+    margin: 20px 0;
 }
 
 /* NAVBAR */
@@ -100,8 +130,27 @@ nav ul li a.active {
     display: none;
 }
 
+
+/* BG */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/gamificacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* MEDIAS */
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     #menu-icon {
         display: block;
     }
