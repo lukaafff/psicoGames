@@ -149,6 +149,80 @@ section {
     flex-direction: column;
 }
 
+/* QUEM SOMOS */
+.fotos-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foto {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* CONTATO */
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px 45px;
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+form label{
+    color: var(--color-text2);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    color: var(--color-text);
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    color: var(--color-text);
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid var(--color-text2);
+    color: var(--color-text2);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: var(--color-text2);
+    color: var(--color-text);
+    border-radius: 16px;
+}
+
 /* MEDIAS */
 @media (max-width: 1300px) {
     #menu-icon {
